@@ -6,8 +6,7 @@ function * takeLatestBy (patternOrChannel, worker, getKey, ...args) {
   yield takeEvery(
     patternOrChannel,
     function * () {
-      const action = arguments[arguments.length - 1]
-      const key = getKey(action)
+      const key = getKey(...arguments)
       const previousTask = tasks[key]
       if (previousTask) {
         yield cancel(previousTask)

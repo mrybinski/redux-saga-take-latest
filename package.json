@@ -5,18 +5,14 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "npm test",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "prepublishOnly": "babel src -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrybinski/redux-saga-take-latest.git"
   },
-  "keywords": [
-    "redux-saga",
-    "saga",
-    "takeLatest",
-    "javascript"
-  ],
+  "keywords": ["redux-saga", "saga", "takeLatest", "javascript"],
   "author": "Michał Rybiński",
   "license": "MIT",
   "bugs": {
