@@ -1,0 +1,27 @@
+{
+  "name": "redux-saga-take-latest-by",
+  "version": "1.0.0",
+  "description": "Variation of takeLatest redux-saga effect, allowing to take latest action by specified key.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm test",
+    "prepublish": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrybinski/redux-saga-take-latest.git"
+  },
+  "keywords": ["redux-saga", "saga", "takeLatest", "javascript"],
+  "author": "Michał Rybiński",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrybinski/redux-saga-take-latest/issues"
+  },
+  "homepage": "https://github.com/mrybinski/redux-saga-take-latest#readme",
+  "peerDependencies": {
+    "redux-saga": "^1.1.3"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  }
+}
