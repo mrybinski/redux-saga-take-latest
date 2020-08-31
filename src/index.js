@@ -1,11 +1,6 @@
 import { fork, cancel, takeEvery } from 'redux-saga/effects'
 
-export default function * takeLatestBy (
-  patternOrChannel,
-  worker,
-  getKey,
-  ...args
-) {
+function * takeLatestBy (patternOrChannel, worker, getKey, ...args) {
   const tasks = {}
 
   yield takeEvery(
@@ -23,3 +18,5 @@ export default function * takeLatestBy (
     ...args
   )
 }
+
+module.exports = takeLatestBy
