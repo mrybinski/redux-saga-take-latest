@@ -41,7 +41,7 @@ You may have want to load the data, filtered by the search term, entered by inpu
 - we start loading data for the term `Adam`, but user then types full name: `Adam Sandler`
 - if, by any chance, previous request ends up being handled longer, we might receive data for `Adam` after data for `Adam Sandler`. If we don't save last search term in state, and validate it after data is received, we might overwrite the data for `Adam Sandler` by the `Adam` data.
 
-Here's the demo (also see [sandbox](https://codesandbox.io/s/take-latest-by-problem-md5mo?file=/saga.js):
+Here's the demo (also see [sandbox](https://codesandbox.io/s/take-latest-by-problem-md5mo?file=/saga.js)):
 ![Problem](demo/problem.gif)
 
 ### How can we fix it?
